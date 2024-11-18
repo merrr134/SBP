@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mengatur carousel agar menampilkan satu gambar pada satu waktu */
+.carousel-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      overflow: hidden;
+  }
+
+  .carousel {
+      display: flex;
+      transition: transform 1s ease;
+      width: 500%; /* Karena ada 5 gambar */
+  }
+
+  .carousel img {
+      width: 20%;
+      object-fit: cover;
+      height: 100vh; /* Menjaga gambar agar memenuhi layar */
+  }
+
+  /* Animasi untuk bergerak secara otomatis, kecuali gambar pertama */
+  @keyframes carouselAnimation {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-100%); }
+      40% { transform: translateX(-200%); }
+      60% { transform: translateX(-300%); }
+      80% { transform: translateX(-400%); }
+      100% { transform: translateX(-500%); }
+  }
+
+  .carousel-wrapper {
+      animation: carouselAnimation 12s linear infinite;
+  }
+  
