@@ -31,7 +31,7 @@
       window.onscroll = function() {
           if (window.innerWidth >= 768) { // Hanya berlaku untuk tampilan desktop (ukuran >= 768px)
               if (window.scrollY > 50) { // Saat scroll lebih dari 50px
-                  navbar.classList.add('bg-white', 'shadow-md'); // Menambahkan background putih dan shadow
+                  navbar.classList.add('bg-white', 'shadow-xl'); // Menambahkan background putih dan shadow
                   navbar.classList.remove('bg-transparent'); // Menghapus background transparan
                   
                   // Ubah warna teks menjadi hitam
@@ -40,7 +40,7 @@
                       link.classList.add('text-black'); // Tambahkan warna teks hitam
                   });
               } else {
-                  navbar.classList.remove('bg-white', 'shadow-md'); // Menghapus background putih dan shadow
+                  navbar.classList.remove('bg-white', 'shadow-xl'); // Menghapus background putih dan shadow
                   navbar.classList.add('bg-transparent'); // Mengembalikan background transparan
                   
                   // Kembalikan warna teks ke putih
@@ -51,7 +51,7 @@
               }
           } else {
               // Pada tampilan ponsel, biarkan navbar tetap transparan tanpa perubahan
-              navbar.classList.remove('bg-white', 'shadow-md'); 
+              navbar.classList.remove('bg-white', 'shadow-xl'); 
               navbar.classList.add('bg-transparent');
               navbarLinks.forEach(link => {
                   link.classList.remove('text-black'); // Hapus warna teks hitam

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/scroll-into-view-if-needed@1.0.0/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </head>
-<body>
+<body> --}}
     <!-- Navbar -->
-    <nav class="bg-transparent fixed top-0 left-0 w-full z-50">
+    {{-- <nav class="bg-transparent fixed top-0 left-0 w-full z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('images/logo.png') }}" class="h-16" alt="Flowbite Logo" />
                 {{-- <span class="self-center text-2xl font-semibold text-white whitespace-nowrap dark:text-white">Flowbite</span> --}}
-            </a>
+            {{-- </a>
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -63,10 +63,10 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --}}
 
     <!-- Hero Section -->
-    <div class="relative w-full h-screen overflow-hidden">
+    {{-- <div class="relative w-full h-screen overflow-hidden">
         <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out" id="slide1">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <img src="{{ asset('images/gambar1.png') }}" class="w-full h-full object-cover">
@@ -79,9 +79,9 @@
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <img src="{{ asset('images/gambar3.png') }}" class="w-full h-full object-cover">
         </div>
-    </div>
+    </div> --}}
 
-    <script>
+    {{-- <script>
         let currentIndex = 0;
         const slides = [
             document.getElementById('slide1'),
@@ -94,6 +94,6 @@
             currentIndex = (currentIndex + 1) % slides.length;
             slides[currentIndex].classList.remove('opacity-0');
         }, 5000);
-    </script>
-</body>
-</html>
+    </script> --}}
+{{-- </body> --}}
+{{-- </html> --}}

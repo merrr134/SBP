@@ -18,17 +18,15 @@
     <!-- Hero Section -->
     @yield('hero')
 
-    
-
-    <!-- Include About Us -->
     <div class="py-16">
-        @include('about')  <!-- This will include the about us section -->
+        @include('partials.about')  <!-- This will include the about us section from the new location -->
     </div>
 
     <!-- Main Content -->
     <main>
         @yield('content')
     </main>
+    @include('partials.footer')
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
