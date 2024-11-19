@@ -1,4 +1,4 @@
-<div class="w-full text-center">
+<div class="w-full text-center mt-8">
       <h2 class="text-base md:text-base lg:text-lg lg:-mt-20 italic mt-9 md:mt-12">
           Kami telah bekerjasama dengan Industri terbaik di bidangnya
       </h2>

@@ -18,7 +18,7 @@
     <!-- Hero Section -->
     @yield('hero')
 
-    <div class="py-16">
+    <div class="">
         @include('partials.about')  <!-- This will include the about us section from the new location -->
     </div>
 
