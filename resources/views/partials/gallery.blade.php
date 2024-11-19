@@ -1,54 +1,56 @@
-<div class="bg-white py-8 px-4">
+<div class="bg-white py-4 px-4 mb-8 md:py-8 md:mb-12">
       <div class="max-w-screen-xl mx-auto">
-          <h2 class="text-2xl font-semibold text-center mb-6">Gallery</h2>
-          <div class="relative">
-              <!-- Tombol Previous -->
-              <button id="prevButton" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow z-10">
-                  &#8592;
-              </button>
+        <h2 class="text-2xl font-semibold text-center mb-8">Gallery</h2>
+        <div class="relative">
+          <!-- Tombol Previous -->
+          <button id="prevButton" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow z-10">
+            &#8592;
+          </button>
     
-              <!-- Wrapper untuk slider -->
-              <div class="overflow-hidden">
-                  <div id="gallerySlider" class="flex transition-transform duration-500 ease-in-out">
-                      <!-- Gambar 1 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar1.png') }}" alt="Gallery Image 1" class="w-full h-auto rounded-lg">
-                      </div>
-                      <!-- Gambar 2 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar2.png') }}" alt="Gallery Image 2" class="w-full h-auto rounded-lg">
-                      </div>
-                      <!-- Gambar 3 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar3.png') }}" alt="Gallery Image 3" class="w-full h-auto rounded-lg">
-                      </div>
-                      <!-- Gambar 4 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar4.png') }}" alt="Gallery Image 4" class="w-full h-auto rounded-lg">
-                      </div>
-                      <!-- Gambar 5 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar5.png') }}" alt="Gallery Image 5" class="w-full h-auto rounded-lg">
-                      </div>
-                      <!-- Gambar 6 -->
-                      <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-                          <img src="{{ asset('images/gambar6.png') }}" alt="Gallery Image 6" class="w-full h-auto rounded-lg">
-                      </div>
-                  </div>
+          <!-- Wrapper untuk slider -->
+          <div class="overflow-hidden">
+            <div id="gallerySlider" class="flex transition-transform duration-500 ease-in-out">
+              <!-- Gambar 1 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar1.png') }}" alt="Gallery Image 1" class="w-full h-auto md:h-48 rounded-lg object-cover">
               </div>
-    
-              <!-- Tombol Next -->
-              <button id="nextButton" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow z-10">
-                  &#8594;
-              </button>
+              <!-- Gambar 2 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar2.png') }}" alt="Gallery Image 2" class="w-full h-auto md:h-48 rounded-lg object-cover">
+              </div>
+              <!-- Gambar 3 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar3.png') }}" alt="Gallery Image 3" class="w-full h-auto md:h-48 rounded-lg object-cover">
+              </div>
+              <!-- Gambar 4 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar4.png') }}" alt="Gallery Image 4" class="w-full h-auto md:h-48 rounded-lg object-cover">
+              </div>
+              <!-- Gambar 5 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar5.png') }}" alt="Gallery Image 5" class="w-full h-auto md:h-48 rounded-lg object-cover">
+              </div>
+              <!-- Gambar 6 -->
+              <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
+                <img src="{{ asset('images/gambar6.png') }}" alt="Gallery Image 6" class="w-full h-auto md:h-48 rounded-lg object-cover">
+              </div>
+            </div>
           </div>
     
-          <!-- Titik Navigasi -->
-          <div id="dotsContainer" class="flex justify-center mt-4 space-x-2">
-              <!-- Titik navigasi dibuat secara dinamis -->
-          </div>
+          <!-- Tombol Next -->
+          <button id="nextButton" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow z-10">
+            &#8594;
+          </button>
+        </div>
+    
+        <!-- Titik Navigasi -->
+        <div id="dotsContainer" class="flex justify-center mt-4 space-x-2">
+          <!-- Titik navigasi dibuat secara dinamis -->
+        </div>
       </div>
     </div>
+    
+
     
 <script>
     document.addEventListener('DOMContentLoaded', () => {
