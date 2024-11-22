@@ -1,5 +1,5 @@
 <nav id="navbar" class="bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 container mx-auto">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo.png') }}" class="h-16" alt="Company Logo" />
         </a>
@@ -16,28 +16,59 @@
         <!-- Navbar Dropdown -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent">
-                <li><a href="#" class="block py-2 px-3 text-white rounded hover:text-blue-500">Home</a></li>
+                <li><a href="/" class="block py-2 px-3 text-gray-500 rounded hover:text-green-500">Home</a></li>
                 <li class="relative group">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white md:hover:text-blue-500">
-                        Dropdown 
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-500 md:hover:text-green-500">
+                        Tentang Kami 
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                         </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="absolute left-0 hidden mt-2 font-normal bg-white divide-y rounded-lg shadow w-44  group-hover:block">
-                        <ul class="py-2 text-sm text-black dark:text-black">
-                          <li><a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-black font-semibold">Sign out</a></li>
-                          <li><a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-black font-semibold">Sign out</a></li>
-                          <li><a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-black font-semibold">Sign out</a></li>
+                    <div id="dropdownNavbar" class="absolute left-0 hidden mt-2 font-normal bg-white divide-y rounded-lg shadow w-44 group-hover:block">
+                        <ul class="py-2 text-sm text-gray-500 dark:text-black">
+                            <li>
+                                <a href="{{ url('/about-us/tentang-kami') }}" class="block px-4 py-2  text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Tentang Kami
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/visi-misi') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Visi & Misi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/sejarah') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Sejarah Singkat
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/tentang-site') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Tentang Site
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/struktur') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Struktur
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/laporan-penjualan') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Laporan Penjualan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/about-us/aset-perusahaan') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
+                                    Aset Perusahaan
+                                </a>
+                            </li>
                         </ul>
-                        <div class="py-1">
-                          <a href="#" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-black font-semibold">Sign out</a>
-                        </div>
                     </div>
+                    
                 </li>
-                <li><a href="#" class="block py-2 px-3 text-white">Pricing</a></li>
-                <li><a href="#" class="block py-2 px-3 text-white">Contact</a></li>
+                {{-- <li><a href="" class="block py-2 px-3 text-white hover:text-green-500">Gallery</a></li> --}}
+                {{-- <li><a href="{{ url('/news') }}" class="block py-2 px-3 text-white hover:text-green-500">News</a></li> --}}
+                <li><a href="{{ url('/contact') }}" class="block py-2 px-3 text-gray-500 hover:text-green-500">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -70,16 +101,16 @@
             navbar.classList.add('bg-white', 'shadow-xl');
             navbar.classList.remove('bg-transparent');
             navbarLinks.forEach(link => {
-                link.classList.remove('text-white');
+                link.classList.remove('text-black');
                 link.classList.add('text-black');
                 link.classList.add('border-b-2');
                 link.classList.add('border-transparent');
                 link.classList.add('hover:border-white');
             });
-            dropdownButton.classList.remove('text-white');
+            dropdownButton.classList.remove('text-black');
             dropdownButton.classList.add('text-black');
             dropdownLinks.forEach(link => {
-                link.classList.remove('text-white');
+                link.classList.remove('text-black');
                 link.classList.add('text-black');
             });
         } else {
@@ -87,14 +118,14 @@
             navbar.classList.add('bg-transparent');
             navbarLinks.forEach(link => {
                 link.classList.remove('text-black');
-                link.classList.add('text-white');
+                link.classList.add('text-black');
                 link.classList.remove('border-b-2');
             });
             dropdownButton.classList.remove('text-black');
-            dropdownButton.classList.add('text-white');
+            dropdownButton.classList.add('text-black');
             dropdownLinks.forEach(link => {
                 link.classList.remove('text-black');
-                link.classList.add('text-white');
+                link.classList.add('text-black');
             });
         }
     }

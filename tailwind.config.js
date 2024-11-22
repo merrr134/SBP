@@ -6,12 +6,18 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
-        "./node_modules/flowbite/**/*.js"
     ],
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                primary: {
+                    light: '#CDDFF1',
+                    DEFAULT: '#3B82F6', // Warna default
+                    dark: '#1E40AF',
+                },
             },
         },
     },

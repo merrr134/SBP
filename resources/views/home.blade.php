@@ -6,7 +6,8 @@
 
 @section('content')
     <!-- Menyertakan news list section -->
+    @include('partials.about')
     @include('partials.news-list')
     @include('partials.gallery')
-    @include('partials.partner')
+    {{-- @include('partials.partner') --}}
 @endsection

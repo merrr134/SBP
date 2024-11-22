@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumber Bumi Putera</title>
-    <link rel="stylesheet" href="{{ asset('images/logo.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
     @vite('resources/css/app.css')
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/scroll-into-view-if-needed@1.0.0/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -18,21 +20,23 @@
     <!-- Hero Section -->
     @yield('hero')
 
-    <div class="">
-        @include('partials.about')  <!-- This will include the about us section from the new location -->
-    </div>
+    @if(View::getSection('about'))
+        @yield('about')
+    @endif
+
 
     <!-- Main Content -->
     <main>
         @yield('content')
     </main>
+    @include('partials.partner')
     @include('partials.footer')
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const logosContainer = document.getElementById('scrolling-logos');
             const totalWidth = logosContainer.scrollWidth / 2; // Total lebar setelah duplikasi gambar
-            const duration = 10; // Durasi animasi dalam detik
+            const duration = 30; // Durasi animasi dalam detik
     
             // GSAP animation untuk terus bergerak tanpa henti
             gsap.to(logosContainer, {
