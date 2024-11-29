@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-    <!-- Pindahkan bagian partner ke sini -->
-    @include('partials.partner')
     <!-- Menyertakan news list section -->
+    @include('partials.about')
     @include('partials.news-list')
     @include('partials.gallery')
+    {{-- @include('partials.partner') --}}
 @endsection

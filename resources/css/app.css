@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Mengatur carousel agar menampilkan satu gambar pada satu waktu */
 .carousel-wrapper {
       position: relative;
